@@ -10,6 +10,152 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"
+        <style>
+  *{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+  background: url(./dar.webp) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.card-header{
+  background: #66ff0054;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #000000, #28ff0b);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right bottom;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #000000;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.dar{
+  color: #000000;
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.desc{
+  font-size: 28px;
+  color: #000000;
+}
+
+.sm{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.sm a:hover{
+  color: #000000;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background: #000000;
+  color: #ffffff;
+}
+
+.card-footer{
+  background: #ffffff;
+  padding: 60px 10px;
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #00be39;
+}
+
+.item span{
+  display: block;
+  color: #2c3a47;
+  font-size: 30px;
+}
+
+.border{
+  border-radius: 12px;
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
+.go{
+  width: 12px;
+}
+  </style>
 </head>
 <body>
   <div class="profile-card">
